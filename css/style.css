@@ -71,19 +71,19 @@ body {
 	color: #fff;
 	font: normal 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	background-color: #79A8A6;
+	color: black;
+	background-color: #F5F3DA;
 	overflow-x: hidden;
 	line-height: 1.5;
         font-family: 'Lato', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	min-height: 2000px;
 
 }
 
-.navbar-fixed-top {
+/*.navbar-fixed-top {
 	background-color: black;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .jumbotron {
@@ -91,7 +91,7 @@ body {
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
-    padding-right: 0px;
+    /*padding-right: 0px;*/
   }
   .jumbotron h1,
   .jumbotron .h1 {
@@ -199,7 +199,7 @@ text-align:justify;
 
 .a-slog {
 	font-size:0.93em;
-	max-width: 450px;
+	max-width: 650px;
 	margin:0 auto;
         padding-top:10px;
 }
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6,
 .btn-custom{
 	border-radius: 3px;
 	padding: 0.8em 1.8em;
-	color: #fff;
+	color: black;
 	font-weight: 700;
 	-webkit-transition: all .5s ease-out;
 	-moz-transition: all .5s ease-out;
@@ -434,6 +434,8 @@ color:#fff;
 {
    background: url(../images/UCL1.jpg) center center no-repeat;
 	background-size:cover;
+	min-width: 100%;
+  min-height: 100%;
 	background-attachment: fixed;
 	color: #cfcfcf;
 }

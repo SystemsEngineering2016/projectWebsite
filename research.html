@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <link href="css/research.css" rel="stylesheet">
 
@@ -49,10 +50,16 @@
 						<li><a href="research.html">Research</a></li>
 						<li><a href="prototypes.html">Prototypes</a></li>
 						<li><a href="UI.html">UI</a></li>
-						<li><a href="git.html">Git</a></li>
+            <li><a href="experiments.html">Development</a></li>
 						<li><a href="testing.html">Testing</a></li>
-						<li><a href="progress.html">Progress</a></li>
-						<li><a href="plans.html">Plans</a></li>
+						<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Progress <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+								<li><a href="progress.html">Bi-Weekly Reports</a></li>
+								<li><a href="https://github.com/SystemsEngineering2016">Our Git Repo</a></li>
+								<li><a href="plans.html">Plans</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -60,22 +67,123 @@
 
     <!-- Page Content -->
     <div class="container">
+      <h2>Our Research</h2>
+      <br>
+      <p>Being beginners to data modeling and database theory, we were required to carry out research into key areas we will be working in. We have shown our research below:</p>
 
+      <br>
       <div class="jumbotron">
-    <h1>Research</h1>
-    <p>Information on project research here</p>
-  </div>
+        <h2> Background Rearch </h2>
+        <br>
+        <h3> Data dictionaries (logical and physical) </h3>
+        <br>
+
+        <p> Data dictionaries are defined by the IBM Dictionary of Computing, as a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format." </p>
+
+        <p>Data dictionaries has several meanings which are in related to  databases and database management systems (DBMS):
+        “A document describing a database or collection of databases.”
+        “An integral component of a DBMS that is required to determine its structure.”
+        “A piece of middleware that extends or supplants the native data dictionary of a DBMS.” </p>
+
+        <p>Data dictionaries are data structures that can be used to metadata which structured data about information. Its main use for designers, users and administrators is for information resource management. It contains tables, which are created in the database by command files which are system generated according to its supporting back end DBMS.</p>
+
+        <p>An “authoritative data dictionary document that catalogues the organization, contents, and conventions of one or more databases” can be of great benefit for database users and application developers. It includes the “the names and descriptions of various tables (records or entities) and their contents (fields) and extra details like the type and length of each data element”. </p>
+
+        <p>Data dictionaries also provide information about the relationships between tables which can also be modelled in the form of Entity-Relationship diagrams. Constraint can be placed on the underlying data. For example, a ‘Range’ acts as a constraint on numeric data values.</p>
+
+        <p> Source:   <a href="https://en.wikipedia.org/wiki/Data_dictionary"> https://en.wikipedia.org/wiki/Data_dictionary </a> </p>
+
+
+    <h3> Data Dictionary Tables </h3>
+    <br>
+    <p>Data dictionary tables of a relational database are used to store the structures of the database. The table below depicts the “product data dictionary tables”.</p>
+
+    <img src="images/table.png">
+
+
+    <p> Source:   <a href="http://www.ibm.com/support/knowledgecenter/SSALK7_7.5.3/com.ibm.mbs.doc/configur/r_data_dictionary_tables.html"> http://www.ibm.com/support/knowledgecenter/SSALK7_7.5.3/com.ibm.mbs.doc/configur/r_data_dictionary_tables.html </a> </p>
+
+
+  <h3> Relational Databases </h3>
+  <br>
+
+    <p>A database that can be identified as a set of tables which can have changes made to it according to the relational model of data. </p>
+
+
+    <p>Each database consists of: </p>
+    <ul>
+    <li>“A set of system catalog tables that describe the logical and physical structure of the data.”</li>
+    <li>“A configuration file containing the parameter values allocated for the database.”</li>
+    <li>“A recovery log with ongoing transactions and archivable transactions.”</li>
+    </ul>
+    <br>
+
+    <p>Below is a table from IBM illustrating the database hierarchy. </p>
+
+  <img src="images/table2.png">
+
+
+  <p> Source:   <a href="http://www.ibm.com/support/knowledgecenter/SSALK7_7.5.3/com.ibm.mbs.doc/configur/r_ctr_db_structures.html"> http://www.ibm.com/support/knowledgecenter/SSALK7_7.5.3/com.ibm.mbs.doc/configur/r_ctr_db_structures.html </a> </p>
+
+
+  <h3> Data Models and Data Modelling </h3>
+  <br>
+
+  <p>Data models are used to model the logical structure of the database to be used in the system being built. They define how data is connected to each other and how it is processed and stored in the system. We can think of data models as a flow chart - they illustrate relationships between data. </p>
+
+
+  <p>In order to do this. we can use diagrams and text to represent the way data will flow through the system in an easily understandable way. /p>
+
+
+  <p>These data models are normally designed and created during the analysis and design stage as this ensures the requirements given are fully understood. /p>
+
+
+  <p>Data modeling is a very important stage of the software cycle as well documented data models allow the client to find any errors easily and make necessary changes before any code is written./p>
+
+
+  <p>Often, multiple models are used to view the same data as it ensures that all processes, entities and relationships have been identified. We can use several different approaches for this:<p>
+
+  <ul>
+  <li><strong>Conceptual Data Modeling </strong>- identifies the highest-level relationships between different entities.</li>
+  <li><strong>Enterprise Data Modeling </strong>- similar to conceptual data modeling, but addresses the unique requirements of a specific business.</li>
+  <li><strong>Logical Data Modeling </strong>- illustrates the specific entities, attributes and relationships involved in a business function. Serves as the basis for the creation of the physical data model.</li>
+  <li><strong>Physical Data Modeling</strong> - represents an application and database-specific implementation of a logical data model.</li>
+  </ul>
+
+  <br>
+  <p> Sources:   <a href=" http://searchdatamanagement.techtarget.com/definition/data-modeling">  http://searchdatamanagement.techtarget.com/definition/data-modeling, </a> <a href="  https://www.tutorialspoint.com/dbms/dbms_data_models.htm">   https://www.tutorialspoint.com/dbms/dbms_data_models.htm </a> </p>
+
+</div>
+
+<div class ="jumbotron">
+  <h2> Project Specific Research </h2>
+</div>
 
 </div>
 
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
+    <script src="library/modernizr.custom.97074.js"></script>
+    <script src="library/jquery-1.11.3.min.js"></script>
+          <script src="library/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <!-- [ PLUGIN SCRIPT ] -->
+          <script src="library/vegas/vegas.min.js"></script>
+    <script src="js/plugins.js"></script>
+          <!-- [ TYPING SCRIPT ] -->
+           <script src="js/typed.js"></script>
+           <!-- [ COUNT SCRIPT ] -->
+           <script src="js/fappear.js"></script>
+         <script src="js/jquery.countTo.js"></script>
+    <!-- [ SLIDER SCRIPT ] -->
+          <script src="js/owl.carousel.js"></script>
+           <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+          <script type="text/javascript" src="js/SmoothScroll.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+          <!-- [ COMMON SCRIPT ] -->
+    <script src="js/common.js"></script>
+
 
 </body>
 

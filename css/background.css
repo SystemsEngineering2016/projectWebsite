@@ -1,4 +1,17 @@
 body {
-  min-height: 2000px;
   padding-top: 70px;
+  background-color: #FCFBED;
+  color: black;
+
+}
+
+.jumbotron {
+  background-color: #F5F3DA;
+  padding-right: 100px;
+  box-shadow: 0 8px 16px -6px black;
+  color: black;
+}
+
+.jumbotron p {
+  font-size: 15px;
 }
