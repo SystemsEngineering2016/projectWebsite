@@ -26,18 +26,42 @@
 		line-height: 1;
 	}
 
+	h7 {
+		font-size: 1.25em;
+	}
+
 	ol, ul {
 		list-style: none;
+		list-style-type: none;
+
 	}
 
 	blockquote, q {
 		quotes: none;
 	}
+	.carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+	      width: 70%;
+	      margin: auto;
+	  }
+
+
+		.carousel-caption {
+			color: black;
+		}
+
+
 
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
 	}
+
+	.carousel-control.right, .carousel-control.left {
+  background-image:none;
+	color: black;
+	border-bottom: none;
+}
 
 	table {
 		border-collapse: collapse;
@@ -2411,7 +2435,6 @@
 		}
 
 	ul {
-		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -3090,6 +3113,7 @@
 				background: #fff;
 				color: #666 !important;
 			}
+
 
 /* Main */
 
