@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Iterations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Requirements</a>
+								<ul>
+									<li><a href="background.html">Background</a></li>
+									<li><a href="requirements.html">Our Requirements</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Research</a>
+								<ul>
+									<li><a href="research.html">Background Research</a></li>
+									<li><a href="researchProject.html">Project Specific Research</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">HCI</a>
+								<ul>
+									<li><a href="prototypes.html">Paper Prototypes</a></li>
+									<li><a href="ui.html">Functional Prototype</a></li>
+									<li><a href="ui.html">Final Delivery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Design</a>
+								<ul>
+									<li><a href="development.html">Initial Experiments</a></li>
+									<li><a href="diagrams.html">Architectural Diagrams</a></li>
+									<li><a href="designPatterns.html">Design Patterns</a></li>
+									<li>
+										<a href="iterationMain.html">Iterations</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Testing</a>
+								<ul>
+									<li><a href="testing.html">Testing Plan</a></li>
+									<li><a href="testingResults.html">Results</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Evaluation</a>
+								<ul>
+									<li><a href="evaluation.html">Evaluation</a></li>
+									<li><a href="furtherDev.html">Further Development</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Project Management</a>
+								<ul>
+									<li><a href="management.html">Project Management</a></li>
+									<li><a href="workpackages.html">Work Packages</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="tools.html">Tools</a></li>
+									<li>
+										<a href="#" >Manuals</a>
+										<ul>
+											<li><a href="systemManual.html">System Manual</a></li>
+											<li><a href="userManual.html">User Manual</a></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+
+							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>First Iteration</h2>
+            <p> Once we had completed the necessary research, we created the first iteration of our web app. In order to do this, we went through our requirements list and started to add basic functionality which could then be built upon. Our first iteration, amongst others, satisfied the following requirements:</p>
+						<ul>
+    				<li>RQ2: The application must be able to create a data dictionary (logical and physical) for the required system e.g. for a customer system or for a payroll system <i class="glyphicon glyphicon-ok"></i></li>
+    				<li>RQ4: The application should ensure that the data dictionaries can handle the versioning of systems <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ11: The application must have a screen for loading data dictionaries <i class="glyphicon glyphicon-ok"></i></li>
+						</ul>
+
+						<h7> We achieved this by creating a Systems data model which was used to store all of the systems that a user would add through the form seen above. We could then display a "mock-up" data dictionary as shown above by using rails commands to get information about the MySQL database we are using. </h7>
+					</header>
+
+
+
+
+					<div class="box userInt">
+			        <p align = "center"> <img src="images/version1/version1_home.png"> </p>
+			        <p align = "center">This was the begining of our home page, which was quite basic to start with.</p>
+							<hr/>
+			         <p align = "center"><img src="images/version1/version1_add.png"></p>
+			        <p align = "center">We had the functionality to add a system and its version. This data would then be stored in our Systems table.</p>
+							<hr/>
+			         <p align = "center"><img src="images/version1/version1_view.png"></p>
+			        <p align = "center"> Out first iteration of displaying a data dictionary was outputting everything from our systems table. This could be done with some commands in rails and gave information such as column and table names and data types.   </p>
+							<hr/>
+			         <p align = "center"><img src="images/version1/version1_show.png"></p>
+			        <p align = "center"> A list of all the systems in our table which could be deleted if necessary by the user.</p>
+							<hr/>
+
+					</div>
+
+					<div class="box">
+						<h2> Client Feedback </h2>
+						<p> Once we were satisfied with our first iteration, we met with our client in order to get his feedback and note any changes he would like. The results of the meeting were the following: </p>
+						<ol>
+							<li> The column names we were using for our data dictionary had to be changed to include Display Height, Display Width, Display Prompt and Display Short Prompt as well as changing Type to Variable Type as the client felt this was more clear.  </li>
+							<li> We were originally under the impression we would be parsing SQL files to display their Data Dictionaries, however the client decided he would prefer to use CSV files and so this requirement was changed.</li>
+						</ol>
+
+						<p> We then used this feedback along with the rest of our requiements in order to create our second iteration </p>
+						<p align = "center"><a class="btn btn-default" href="iteration2.html" role="button">Go to iteration 2</a> </p>
+
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

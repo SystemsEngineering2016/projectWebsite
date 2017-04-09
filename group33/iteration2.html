@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Iterations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Requirements</a>
+								<ul>
+									<li><a href="background.html">Background</a></li>
+									<li><a href="requirements.html">Our Requirements</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Research</a>
+								<ul>
+									<li><a href="research.html">Background Research</a></li>
+									<li><a href="researchProject.html">Project Specific Research</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">HCI</a>
+								<ul>
+									<li><a href="prototypes.html">Paper Prototypes</a></li>
+									<li><a href="ui.html">Functional Prototype</a></li>
+									<li><a href="ui.html">Final Delivery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Design</a>
+								<ul>
+									<li><a href="development.html">Initial Experiments</a></li>
+									<li><a href="diagrams.html">Architectural Diagrams</a></li>
+									<li><a href="designPatterns.html">Design Patterns</a></li>
+									<li>
+										<a href="iterationMain.html">Iterations</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Testing</a>
+								<ul>
+									<li><a href="testing.html">Testing Plan</a></li>
+									<li><a href="testingResults.html">Results</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Evaluation</a>
+								<ul>
+									<li><a href="evaluation.html">Evaluation</a></li>
+									<li><a href="furtherDev.html">Further Development</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Project Management</a>
+								<ul>
+									<li><a href="management.html">Project Management</a></li>
+									<li><a href="workpackages.html">Work Packages</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="tools.html">Tools</a></li>
+									<li>
+										<a href="#" >Manuals</a>
+										<ul>
+											<li><a href="systemManual.html">System Manual</a></li>
+											<li><a href="userManual.html">User Manual</a></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+
+							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+	  			</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Second Iteration</h2>
+            <p> After gathering feedback from our client regarding our first iteration, we made the changes he requsted as well as continuing to add more functionality according to our requirements list. Once our second iteration was complete, we had fulfilled the following requirements: </p>
+						<ul>
+    				<li>RQ1: The application must be a data dictionary editor <i class="glyphicon glyphicon-ok"></i></li>
+    				<li>RQ2: The application must be able to create a data dictionary (logical and physical) for the required system e.g. for a customer system or for a payroll system <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ4: The application should ensure that the data dictionaries can handle the versioning of systems <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ11: The application must have a screen for loading data dictionaries <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ13: The application must have a screen for loading data <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ15: The application must accept systems and data dictionaries as its data (content for the application) <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ16: The application must define a data model for our data dictionary <i class="glyphicon glyphicon-ok"></i></li>
+						<li>RQ17: The data dictionary should have have the ability to be augmented (can grow in size) <i class="glyphicon glyphicon-ok"></i></li>
+
+
+						</ul>
+
+						<h7> During the development of the second iteration, two more data models were added - Versions and Tables to join our existing Systems model. There is a relationship between systems and versions, as well as a relationship between versions and tables.</h7> <br> <br>
+						<h7> The fact that we now had more than one data model meant that the data models for our application are nested more than 1 level deep. The ‘ruby on rails guide’ recommends that the controllers for these respective databases can’t be nested more than 1 level deep. This is because as the size of the nesting increases, the required commands for the respective controller quickly become complicated. The solution to overcome the issues of deep nesting is to use shallow nesting. This involves using the “:shallow” option when stating the relationship between the controllers in the routing file for the rails application. The actions are collectively scoped under the parent to avoid deep nesting. This becomes more like a hierarchy. In order to construct the routes, the minimal amount of information is required to uniquely identify the resource. “The shallow method of the DSL creates a scope inside of which every nesting is shallow.”</h7>
+					</header>
+							<div class="box userInt">
+									<p align = "center"> <img src="images/Version2/version2_home.png"> </p>
+									<p align = "center">Our home page was mostly unchanged from the first iteration of our application.</p>
+									<hr/>
+									 <p align = "center"><img src="images/Version2/version2_add.png"></p>
+									<p align = "center">We now removed the version number from the "add new system" functionality as this is a seperate process, using the newly created "versions" table.</p>
+									<hr/>
+									 <p align = "center"><img src="images/Version2/version2_options.png"></p>
+									<p align = "center"> A dropdown menu that has a number of options such as show system, edit system and delete system.   </p>
+									<hr/>
+									 <p align = "center"><img src="images/Version2/version2_view.png"></p>
+									<p align = "center"> We were able to show a list of all of the systems within the systems table which was done using a search of the table.</p>
+									<hr/>
+									<p align = "center"><img src="images/Version2/version2_table.png"></p>
+								 <p align = "center"> We added the abiliy to add a new table for a specified system. This would use our new table within our database to store this information, linking the systems table with systemID as a foreign key.</p>
+								 <hr/>
+									<p align = "center"><img src="images/Version2/version2_show.png"></p>
+								 <p align = "center"> We could then display all versions for a particular system.</p>
+								 <hr/>
+
+
+							</div>
+
+					<div class="box">
+						<h2> Client Feedback </h2>
+						<p> Once we were satisfied with our second iteration, we had another meeting with our client in order to get his feedback and note any changes he would like. The results of the meeting were the following: </p>
+						<ol>
+							<li> Remove "created at" and "updated at" attributes in systems and versions lists as the client felt these pieces of information were redundant </li>
+							<li> A simple '+' icon should be used as an option to add a new system</li>
+							<li> In the list of systems, the name of the system should link to its version page rather than having a seperate button as the client feels this is more intuative </li>
+							<li> Use icons for 'edit' and 'delete' buttons as words are not necessary</li>
+							<li> Add a true/false marker which can indicate which versions are active and which ones are not </li>
+							<li> Enable users to edit individual fields on a displayed data dictionary</li>
+						</ol>
+
+						<p> Along with these requests, the client recomended that we no longer focus on parsing a CSV file and instead focus on manual entry by the user. We took all of these comments on board and started development of our third iteration</p>
+						<p align = "center"><a class="btn btn-default" href="iteration3.html" role="button">Go to iteration 3</a> </p>
+
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

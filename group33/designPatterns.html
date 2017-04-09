@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Evaluation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Requirements</a>
+								<ul>
+									<li><a href="background.html">Background</a></li>
+									<li><a href="requirements.html">Our Requirements</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Research</a>
+								<ul>
+									<li><a href="research.html">Background Research</a></li>
+									<li><a href="researchProject.html">Project Specific Research</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">HCI</a>
+								<ul>
+									<li><a href="prototypes.html">Paper Prototypes</a></li>
+									<li><a href="ui.html">Functional Prototype</a></li>
+									<li><a href="ui.html">Final Delivery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Design</a>
+								<ul>
+									<li><a href="development.html">Initial Experiments</a></li>
+									<li><a href="diagrams.html">Architectural Diagrams</a></li>
+									<li><a href="designPatterns.html">Design Patterns</a></li>
+									<li>
+										<a href="iterationMain.html">Iterations</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Testing</a>
+								<ul>
+									<li><a href="testing.html">Testing Plan</a></li>
+									<li><a href="testingResults.html">Results</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Evaluation</a>
+								<ul>
+									<li><a href="evaluation.html">Evaluation</a></li>
+									<li><a href="furtherDev.html">Further Development</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Project Management</a>
+								<ul>
+									<li><a href="management.html">Project Management</a></li>
+									<li><a href="workpackages.html">Work Packages</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="tools.html">Tools</a></li>
+									<li>
+										<a href="#" >Manuals</a>
+										<ul>
+											<li><a href="systemManual.html">System Manual</a></li>
+											<li><a href="userManual.html">User Manual</a></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+
+							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+	  			</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Design Patterns</h2>
+            <p> During the development stage we used a number of Design Patterns in order to help speed up the development process by providing tested and proven development paradigms. The design patterns that we used were: </p>
+					</header>
+					<div class="box">
+            <h2> Model, View, Controller </h2>
+            <p> The Rails frameworks is based on the Model View Controller abstraction where the Controller updates the view according to the model. It clearly is adapted to the Web needs and built around the HTTP specifications (so a controller returns a Response rather than necessarily updating the View) but the underlying logic can be easily recognised. It is very useful as responsibilities are assigned according to each component. </p>
+					</div>
+					<div class="box">
+						<h2> Bridge Pattern </h2>
+						<p> We utilise the Bridge pattern in order to help with the development of our models. We define an abstraction in source files, and then the Rails framework takes this information and then manipulates the MySQL database to match. These higher level constructs serve as an easy access point to manipulating the lower level components of the system.  </p>
+					</div>
+
+					<div class="box">
+						<h2> Template Method pattern </h2>
+						<p> Our usage of the basic functionality of Rails qualifies as the Template Method pattern, which involves building on an existing skeleton deferring behaviour to subclasses. The framework provides the core of functionality for many of our classes, which we apply operations on in order to extend their abilities. We provide behaviour for functions which had minimal operations previously. </p>
+					</div>
+
+					<div class="box">
+						<h2> Singleton </h2>
+						<p> The Singleton pattern discusses a concept of requiring only one instance of an object in order to help coordinate actions across the system. In this way, both the MySQL database - established only once and accessed across the breadth of the software, serving as an oracle of truth against which information is checked, compared, and written to - and the controller act as Singletons. </p>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
