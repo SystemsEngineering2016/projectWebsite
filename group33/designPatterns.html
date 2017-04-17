@@ -40,7 +40,7 @@
 								<ul>
 									<li><a href="prototypes.html">Paper Prototypes</a></li>
 									<li><a href="ui.html">Functional Prototype</a></li>
-									<li><a href="ui.html">Final Delivery</a></li>
+									<li><a href="final.html">Final Delivery</a></li>
 								</ul>
 							</li>
 							<li>
@@ -51,6 +51,7 @@
 									<li><a href="designPatterns.html">Design Patterns</a></li>
 									<li>
 										<a href="iterationMain.html">Iterations</a>
+
 									</li>
 								</ul>
 							</li>
@@ -64,22 +65,21 @@
 							<li>
 								<a href="#" class="icon fa-angle-down">Evaluation</a>
 								<ul>
-									<li><a href="evaluation.html">Evaluation</a></li>
-									<li><a href="furtherDev.html">Further Development</a></li>
+									<li><a href="evaluation.html">Summary</a></li>
+									<li><a href="furtherDev.html">Critical Evaulation</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="#" class="icon fa-angle-down">Project Management</a>
 								<ul>
 									<li><a href="management.html">Project Management</a></li>
-									<li><a href="workpackages.html">Work Packages</a></li>
 									<li><a href="progress.html">Bi-Weekly Reports</a></li>
 									<li><a href="tools.html">Tools</a></li>
 									<li>
 										<a href="#" >Manuals</a>
 										<ul>
-											<li><a href="systemManual.html">System Manual</a></li>
-											<li><a href="userManual.html">User Manual</a></li>
+											<li><a href="SystemManual.pdf">System Manual</a></li>
+											<li><a href="UserManual.pdf">User Manual</a></li>
 									</ul>
 								</li>
 								</ul>
@@ -103,16 +103,22 @@
 					<div class="box">
 						<h2> Bridge Pattern </h2>
 						<p> We utilise the Bridge pattern in order to help with the development of our models. We define an abstraction in source files, and then the Rails framework takes this information and then manipulates the MySQL database to match. These higher level constructs serve as an easy access point to manipulating the lower level components of the system.  </p>
+						<p align="center"> <img src="images/bridge.png"></p>
+						<p> The diagram above shows how we used this design pattern within our application. The model refers to one of our four different models - Systems, Versions, DataPoints and Mappings. </p>
+
 					</div>
 
 					<div class="box">
 						<h2> Template Method pattern </h2>
 						<p> Our usage of the basic functionality of Rails qualifies as the Template Method pattern, which involves building on an existing skeleton deferring behaviour to subclasses. The framework provides the core of functionality for many of our classes, which we apply operations on in order to extend their abilities. We provide behaviour for functions which had minimal operations previously. </p>
+						<p align="center"> <img src="images/template.png"></p>
 					</div>
 
 					<div class="box">
 						<h2> Singleton </h2>
 						<p> The Singleton pattern discusses a concept of requiring only one instance of an object in order to help coordinate actions across the system. In this way, both the MySQL database - established only once and accessed across the breadth of the software, serving as an oracle of truth against which information is checked, compared, and written to - and the controller act as Singletons. </p>
+						<p align="center"> <img src="images/single.png"></p>
+
 					</div>
 
 				</section>

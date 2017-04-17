@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Architectural Diagrams</title>
+		<title>Evaluation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,7 +18,7 @@
 
 			<!-- Header -->
 				<header id="header">
-					<nav id="nav">
+          <nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
@@ -93,24 +93,26 @@
 			<!-- Main -->
 				<section id="main" class="container">
 					<header>
-						<h2>Architectural Diagrams</h2>
-						<p> In order to describe the architecure of our system, we created some Architectural Diagrams. These are intended to give a visual representation of our architecture in a way that is easy to understand. They can be seen below: </p>
+						<h2>Critical Evaluation</h2>
+						<p>Below is a critical evaluation of our project including sections such as its architecture, user interface and future work. </p>
 					</header>
 					<div class="box">
-						<h2> Model, View, Controller </h2>
-						<br>
-						<p align = "center" > <img src = "images/aa.png" > </p>
-						<p> The overall design of our system follows the "Model, View, Controller" principle which is very much fundamental when using Rails. It allows us to write the code for our application in a clear and structured way that should be easy to understand. </p>
+						<h2> Architecture Design </h2>
 
-					</div>
+            <p>We used a Model, View, Controller design pattern for our application and it made up the main architecture of our web app. The fact that we used this pattern meant that we could neatly organise our code into its individual sections and allowed for good coding practice from the offset. It also means that should our clients developers need to edit or check our code then it should be clear to them how everything comes together.</p>
+            <p>We also carefully designed our database system, making sure we used correct relationships between all of our tables. We did this by deciding the “hierarchy” of our tables and working our way down to the least important one. For example within our application, “Systems” was the top table, followed by “Versions” which had a foreign key “SystemID” from the Systems table. We then worked our way down into “DataPoints” and “Mappings” which were all connected with foreign key. This process meant that we could avoid data duplication and data inconsistencies within our database which is something we aimed to avoid from the start. For example rather than storing a new entry of “System Name” within each Version table, we can find the system name from the System table using the “SystemID” foreign key. This means that should the System Name be changed then that will automatically filter through all of our tables rather than having inconsistencies throughout.</p>
 
-					<div class="box">
-						<h2> Database Design </h2>
-						<br>
-						<p align = "center" > <img src = "images/db.png" > </p>
-						<p> Our database used required four different tables in order to complete the task required. We had tables for "Systems", "Versions", "Data_Points" and "Mappings" which were related as shown in the diagram above. "Systems", "Versions" and "Data_Points" are all connected using a foreign key - we are storing the primary key from the table above it in the table. This allows us to easily find information such as the name of a system from a given set of data points. It was clear from the start that we wanted to use this approach as it is good database design practice and reduces things such as data duplication and data inconsistencies. </p>
+            <h2>User interface design and user experience </h2>
+            <p>An easy to use and clear user interface was one of the most important factors we took into account when developing our application. We wanted to make sure that our application was as intuitive as possible and so we made sure this was achieved in a number of different ways. We used icons such as a bin and a pencil for options such as deleting and editing as we see these as universal icons which most people will immediately understand  and so makes the user experience more familiar and simple. We also made sure to add hover over text for each of these options which would explain in more detail the function of these buttons. This was an accessibility feature that we added to make sure that our application could be used by a wide range of people. </p>
+            <p>We also added a “Key Features” section to our home page with the intention to be a clear summary of everything Maple can do. We added shortcut buttons in order to go to each of these sections in an attempt to add flow to the user experience. </p>
+            <p>In summary we feel that Maple offers a good user experience, being very self explanatory with a good flow between pages. </p>
+          </div>
 
-					</div>
+
+
+
+
+
 
 				</section>
 

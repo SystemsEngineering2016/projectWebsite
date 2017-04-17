@@ -40,7 +40,7 @@
 								<ul>
 									<li><a href="prototypes.html">Paper Prototypes</a></li>
 									<li><a href="ui.html">Functional Prototype</a></li>
-									<li><a href="ui.html">Final Delivery</a></li>
+									<li><a href="final.html">Final Delivery</a></li>
 								</ul>
 							</li>
 							<li>
@@ -51,6 +51,7 @@
 									<li><a href="designPatterns.html">Design Patterns</a></li>
 									<li>
 										<a href="iterationMain.html">Iterations</a>
+
 									</li>
 								</ul>
 							</li>
@@ -64,22 +65,21 @@
 							<li>
 								<a href="#" class="icon fa-angle-down">Evaluation</a>
 								<ul>
-									<li><a href="evaluation.html">Evaluation</a></li>
-									<li><a href="furtherDev.html">Further Development</a></li>
+									<li><a href="evaluation.html">Summary</a></li>
+									<li><a href="furtherDev.html">Critical Evaulation</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="#" class="icon fa-angle-down">Project Management</a>
 								<ul>
 									<li><a href="management.html">Project Management</a></li>
-									<li><a href="workpackages.html">Work Packages</a></li>
 									<li><a href="progress.html">Bi-Weekly Reports</a></li>
 									<li><a href="tools.html">Tools</a></li>
 									<li>
 										<a href="#" >Manuals</a>
 										<ul>
-											<li><a href="systemManual.html">System Manual</a></li>
-											<li><a href="userManual.html">User Manual</a></li>
+											<li><a href="SystemManual.pdf">System Manual</a></li>
+											<li><a href="UserManual.pdf">User Manual</a></li>
 									</ul>
 								</li>
 								</ul>
@@ -143,7 +143,7 @@
 					<div class="box">
 						<h2> Frameworks & Tools </h2>
 						<hr/>
-						<img src="images/framework.png">
+						<p align="center"><img src="images/framework.png"> </p>
 
 						<p> Now that we had decided to build a web app, we had to decide on any Frameworks and Tools that we would use. There are a number of options we could use for tools and frameworks to assist us in development of the application. </p>
 							<p>For example, if we chose PHP - a language we are familiar with, and which is already used for the core OpenEyes system - we could use the PHPStorm Integrated Development Environment (IDE) by JetBrains. This would be a familiar working environment as some members of the team have already used it, and it is similar in functionality and use to the IntelliJ Java IDE. However, PHP is a language which may have many undesirable complications such as security vulnerabilities caused both by the language itself and by how easy it is to write bad code using it.</p>
@@ -152,7 +152,46 @@
 
 							<p> During research, we spoke with our client who suggested that we not use PHP because of his historical experience with the language being negative. This was initially a concern becaue PHP has the advantage of being fairly simple to write, but as research went on it became clear that it was difficult to write PHP code without bugs or exploits, justifying his point of view. </p>
 
-							<p> We therefore decided that we would use Ruby on Rails... </p>
+							<p> We therefore summarised our findings in order to make our decision: </p>
+
+							<table class="table table-hover">
+						 <thead>
+							 <tr>
+								 <th>Platform</th>
+								 <th>Prior Experience</th>
+								 <th>Comments</th>
+								 <th>Decision</th>
+
+
+							 </tr>
+						 </thead>
+						 <tbody>
+
+							 <tr>
+								 <td>Ruby on Rails</td>
+								 <td>None</td>
+								 <td>Clear interface, plenty of resources available</td>
+								 <td><b>Will use</b></td>
+
+							 </tr>
+
+							 <tr>
+								 <td>PHP</td>
+								 <td>Good</td>
+								 <td>All operating systems</td>
+								 <td>Will not use</td>
+							 </tr>
+
+							 <tr>
+								<td>Grails</td>
+								<td>None</td>
+								<td>Similar to rails, takes work out of web developers' hands</td>
+								<td>Will not use</td>
+							</tr>
+
+
+						 </tbody>
+					 </table>
 					</div>
 
 				</section>

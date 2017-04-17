@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Architectural Diagrams</title>
+		<title>Final Delivery</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -93,22 +93,39 @@
 			<!-- Main -->
 				<section id="main" class="container">
 					<header>
-						<h2>Architectural Diagrams</h2>
-						<p> In order to describe the architecure of our system, we created some Architectural Diagrams. These are intended to give a visual representation of our architecture in a way that is easy to understand. They can be seen below: </p>
+						<h2>Final Delivery</h2>
+						<p> Below you can see a sample of our final application through a series of screenshots. By looking at the screenshots below, you can see you we have progressed from our initial paper prototypes to our final product.</p>
 					</header>
-					<div class="box">
-						<h2> Model, View, Controller </h2>
-						<br>
-						<p align = "center" > <img src = "images/aa.png" > </p>
-						<p> The overall design of our system follows the "Model, View, Controller" principle which is very much fundamental when using Rails. It allows us to write the code for our application in a clear and structured way that should be easy to understand. </p>
-
-					</div>
-
-					<div class="box">
-						<h2> Database Design </h2>
-						<br>
-						<p align = "center" > <img src = "images/db.png" > </p>
-						<p> Our database used required four different tables in order to complete the task required. We had tables for "Systems", "Versions", "Data_Points" and "Mappings" which were related as shown in the diagram above. "Systems", "Versions" and "Data_Points" are all connected using a foreign key - we are storing the primary key from the table above it in the table. This allows us to easily find information such as the name of a system from a given set of data points. It was clear from the start that we wanted to use this approach as it is good database design practice and reduces things such as data duplication and data inconsistencies. </p>
+					<div class="box userInt">
+			        <p align = "center"><img src="images/Final/home.png"> </p>
+			        <p align = "center">Maple's home page containing key features and shortcuts to those features </p>
+							<hr/>
+			        <p align = "center"><img src="images/Final/newSystem.png"> </p>
+			        <p align = "center"> Ability to add a new system </p>
+							<hr/>
+			        <p align = "center"><img src="images/Final/systemList.png"> </p>
+			        <p align = "center">List of all systems within Maple </p>
+							<hr/>
+			        <p align = "center"><img src="images/Final/newVersion.png"> </p>
+			        <p align = "center"> Ability to add a new version for a system</p>
+							<hr/>
+			        <p align = "center"><img src="images/Final/versionList.png"> </p>
+			        <p align = "center"> List of all versions for a particular system </p>
+							<hr/>
+							<p align = "center"><img src="images/Final/dataAdd.png"> </p>
+						 <p align = "center"> Data entry to add data points for a particular version </p>
+						 <hr/>
+						 <p align = "center"><img src="images/Final/datapoints.png"> </p>
+						 <p align = "center"> list of all data points for a particular version which can be edited </p>
+						 <hr/>
+			        <p align = "center"><img src="images/Final/newMapping.png"> </p>
+			        <p align = "center"> Main page to create a new mapping </p>
+							<hr/>
+			       <p align = "center"> <img src="images/Final/addMapping.png"> </p>
+			        <p align = "center"> Can choose data points for a chosen system and create a mapping </p>
+							<hr/>
+			       <p align = "center"> <img src="images/Final/allMappings.png"> </p>
+			        <p align = "center"> A list of all mappings within Maple </p>
 
 					</div>
 
