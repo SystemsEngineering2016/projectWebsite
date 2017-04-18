@@ -51,15 +51,13 @@
 									<li><a href="designPatterns.html">Design Patterns</a></li>
 									<li>
 										<a href="iterationMain.html">Iterations</a>
-
 									</li>
 								</ul>
 							</li>
 							<li>
 								<a href="#" class="icon fa-angle-down">Testing</a>
 								<ul>
-									<li><a href="testing.html">Testing Plan</a></li>
-									<li><a href="testingResults.html">Results</a></li>
+									<li><a href="testing.html">Testing</a></li>
 								</ul>
 							</li>
 							<li>
@@ -73,8 +71,10 @@
 								<a href="#" class="icon fa-angle-down">Project Management</a>
 								<ul>
 									<li><a href="management.html">Project Management</a></li>
-									<li><a href="progress.html">Bi-Weekly Reports</a></li>
 									<li><a href="tools.html">Tools</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="client.html">Client Meetings & <br> Final Feedback</a></li>
+
 									<li>
 										<a href="#" >Manuals</a>
 										<ul>
@@ -84,7 +84,6 @@
 								</li>
 								</ul>
 							</li>
-
 							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 					</ul>
 	  			</nav>
@@ -94,159 +93,87 @@
 				<section id="main" class="container">
 					<header>
 						<h2>Testing</h2>
-						<p>We know it is vital to test our project in order to make sure it does what it is intended to do. We firstly need to make sure that the client (end user) is happy with the website we have made and its functionality. We then need to make sure that the website matches the requirements as these are the 'contract' we created with our client. In order to test our product in term 2, we will complete a variety of tasks:</p>
+						<p>We know it is vital to test our project in order to make sure it does what it is intended to do. We firstly need to make sure that the client (end user) is happy with the application we have made and its functionality as he is the person who will be using Maple going forward. We therefore created a series of test cases and demonstrated/allowed the client to use the features in order to obtain his feedback. We also asked others to use our application and note the test cases in order to get a wider range of feedback to get an idea of things such as user experience. <br> <br>We thought it was important to test each development iteration of our application in order to make sure our client was always happy. We therefore demonstrated each iteration to him and collected his feedback before moving on to the next development iteration. Each set of feedback, along with the details of each iteration can be seen here: <br> <br>
+							<a class="btn btn-default" href="iteration1.html#feedback1" role="button">Iteration 1 Feedback</a><br>
+							<a class="btn btn-default" href="iteration2.html#feedback2" role="button">Iteration 2 Feedback</a><br>
+							<a class="btn btn-default" href="iteration3.html#feedback3" role="button">Iteration 3 Feedback</a><br>
+							<a class="btn btn-default" href="iteration4.html#feedback4" role="button">Iteration 4 Feedback</a><br><br>
+
+
+					 General feedback for our final application can be seen below whilst our clients final feedback can be seen <a href = "client.html#finalFeedback" >here </a> </p>
 
 					</header>
 					<div class="box">
-				    <h3> User Testing </h3>
-				    <p> We will get the client to test the product and give his feedback on what he thinks. We will do this both with a survey and also ask to give generalised verbal feedback </p>
+				    <h3> User Acceptence Testing </h3>
 
-				    <h3> Requirements Testing </h3>
-				    <p>We will systematically go over every individual requirement and assess the functionality to ensure that the system’s behaviour matches what is stated and requested. If any of the requirements are not quite met, we will modify the system until its functionality is sufficient to fulfil the requirement as written. We will go through the following table to make sure our requirements are met: </p>
-
-				    <h4> Functional Requirements </h4>
 				    <table class="table table-hover">
 				    <thead>
 				      <tr>
-				        <th>ID</th>
-				        <th>Requirement</th>
-				        <th>Requirement met?</th>
-				        <th>Proof (if required)</th>
+				        <th>Test Case</th>
+				        <th>Feedback</th>
 
 				      </tr>
 				    </thead>
 				    <tbody>
+
 				      <tr>
-				        <td>RQ1</td>
-				        <td>The application must be a data dictionary editor</td>
-				        <td></td>
-				        <td></td>
+				        <td>User should easily be able to create a new system</td>
+				        <td>1) User interface easy to understand and navigation is simple <br> 2) I found it very easy to add a new system </td>
 
 				      </tr>
 
 				      <tr>
-				        <td>RQ2</td>
-				        <td>The application must be able to create a data dictionary (logical and physical) for the required system e.g. for a customer system or for a payroll system</td>
-				        <td></td>
-				        <td></td>
-
-				      </tr>
-
-				      <tr>
-				        <td>RQ3</td>
-				        <td>The application should be able to load the data dictionary for OpenEyes into the application</td>
-				        <td></td>
-				        <td></td>
-				      </tr>
-				      <tr>
-				        <td>RQ4</td>
-				        <td>The application should ensure that the data dictionaries can handle the versioning of systems</td>
-				        <td></td>
-				        <td></td>
+				        <td>User should be able to view all systems</td>
+				        <td>1) The navbar made it very easy to navigate to the section where I could view all systems <br> 2) I especially liked the search feature, it saved time rather than searching all of the systems manually </td>
 				       </tr>
 				      <tr>
-				        <td>RQ5</td>
-				        <td>The application should ensure that the data dictionary items can be mapped to other items of another system or version</td>
-				        <td></td>
-				        <td></td>
+				        <td>Systems should be able to be edited (name and active status)</td>
+				        <td>1) The pencil icon was clear as it is universally used on many applications <br> 2) I liked the hover over text that said what the icon did as it confirmed my thoughts, adding an extra layer to the user experience</td>
 				      </tr>
 
 				      <tr>
-				        <td>RQ6</td>
-				        <td>The application should allow the extraction of data dictionary data</td>
-				        <td></td>
-				        <td></td>
+				        <td>User should be able to create a new version</td>
+				        <td>1) The create versions link in the navbar was very clear to me along with the dropdown to choose a system <br> 2) There were multiple routes in order to get to the create versions page, and at first I struggled to realise that they led to the same page</td>
 				      </tr>
 				      <tr>
-				        <td>RQ7</td>
-				        <td>The application should be able to load data models</td>
-				        <td></td>
-				        <td></td>
+				        <td>User should be able to view all versions</td>
+				        <td>1) The view versions link on the home page was particularly clear <br> 2) The fact that all system names were a link within the Systems list made it very clear that that took me to more information regarding the versions </td>
 				      </tr>
-				      <tr>
-				        <td>RQ8</td>
-				        <td>The application should be able to compare data models</td>
-				        <td></td>
-				        <td></td>
+							<tr>
+				        <td>User should easily be able to add, edit and delete data points</td>
+				        <td>1) The hover text on the name of versions in the version list stated "click to view data points" so it wasn't very clear that this was also the link to add new data points <br> 2) The button to add new data points was very clear </td>
 				      </tr>
-				      <tr>
-				        <td>RQ9</td>
-				        <td>The application could be able to load XML schema data</td>
-				        <td></td>
-				        <td></td>
+							<tr>
+				        <td>User should be able to create a mapping between two versions</td>
+				        <td>1)The shortcut on the homepage made navigation to the mapping page. Once there the instructions were clear on how to map between versions. <br> 2) Having to be redirected to a new page to choose the version for each system to map was an extra click that I felt could have been avoided</td>
 				      </tr>
-				      <tr>
-				        <td>RQ10</td>
-				        <td>The application should allow a data dictionary to be mapped to other data dictionaries</td>
-				        <td></td>
-				        <td></td>
+
+							<tr>
+				        <td>User should be able to view and delete mappings</td>
+				        <td>1) The view all mappings page was clear with the bin icon clearly being the delete feature <br> 2) At first I didn't see the bin icon for deletion as you had to scroll to the end of the table</td>
 				      </tr>
-				      <tr>
-				        <td>RQ11</td>
-				        <td>The application must have a screen for loading data dictionaries</td>
-				        <td></td>
-				        <td></td>
-				      </tr>
-				      <tr>
-				        <td>RQ12</td>
-				        <td>The application must have a screen that enables the maintenance of a single data dictionary (adding and removal of columns)</td>
-				        <td></td>
-				        <td></td>
-				      </tr>
-				      <tr>
-				        <td>RQ13</td>
-				        <td>The application must have a screen for loading data</td>
-				        <td></td>
-				        <td></td>
-				      </tr>
-				      <tr>
-				        <td>RQ14</td>
-				        <td>The application must have a screen that gives access to the default mapping tool</td>
-				        <td></td>
-				        <td></td>
-				      </tr>
+
+							<tr>
+								<td>System names must be unique</td>
+								<td>1) I was not allowed to enter two identical system names <br> 2) The error message was clear and let me know to choose a new, unique name</td>
+							</tr>
+							<tr>
+								<td>Version names must be unique</td>
+								<td>1) The validation worked for me <br> 2) I tried to enter a version name that was already used an I was not allowed</td>
+							</tr>
+							<tr>
+								<td>A set of data points cannot be added unless a logical name is given</td>
+								<td>1) I left the logical name blank and I was not allowed to submit the data points <br> 2) It was not clear to me that the logical name was manditory before submission</td>
+							</tr>
+							<tr>
+								<td>A duplicate mapping cannot be made</td>
+								<td>1) I was not allowed to make a duplicate mapping <br> 2) It would be good to not allow a selection of data points that have already been mapped to by disabling the radio buttons</td>
+							</tr>
+
 				    </tbody>
 				  </table>
 				  <br>
-				  <h4> Non-Functional Requirements </h4>
-				  <table class="table table-hover">
-				  <thead>
-				    <tr>
-				      <th>ID</th>
-				      <th>Requirement</th>
-				      <th>Requirement met?</th>
-				      <th>Proof (if required)</th>
 
-				    </tr>
-				  </thead>
-				  <tbody>
-
-				    <tr>
-				      <td>RQ15</td>
-				      <td>The application must accept systems and data dictionaries as its data (content for the application)</td>
-				      <td></td>
-				      <td></td>
-				    </tr>
-
-				    <tr>
-				      <td>RQ16</td>
-				      <td>The application must define a data model for our data dictionary</td>
-				      <td></td>
-				      <td></td>
-				    </tr>
-
-
-				    <tr>
-				      <td>RQ17</td>
-				      <td>The data dictionary should have have the ability to be augmented (can grow in size)</td>
-				      <td></td>
-				      <td></td>
-				    </tr>
-
-
-
-				  </tbody>
-				</table>
 					</div>
 
 				</section>

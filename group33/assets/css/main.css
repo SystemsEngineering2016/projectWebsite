@@ -42,7 +42,10 @@
 		list-style-type: none;
 
 	}
+.container ul {
+	font-size: 1.25em
 
+}
 	blockquote, q {
 		quotes: none;
 	}
