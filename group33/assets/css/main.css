@@ -31,6 +31,15 @@
 	}
 
 
+	img {
+	    width:70%;
+	}
+
+.img1 {
+	width: auto;
+}
+
+
 
 
 	#achievements.box li {
@@ -1890,7 +1899,7 @@
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 		letter-spacing: 0;
 	}
