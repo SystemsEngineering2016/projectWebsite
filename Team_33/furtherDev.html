@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Evaluation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Requirements</a>
+								<ul>
+									<li><a href="background.html">Background</a></li>
+									<li><a href="requirements.html">Our Requirements</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Research</a>
+								<ul>
+									<li><a href="research.html">Background Research</a></li>
+									<li><a href="researchProject.html">Project Specific Research</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">HCI</a>
+								<ul>
+									<li><a href="prototypes.html">Paper Prototypes</a></li>
+									<li><a href="ui.html">Functional Prototype</a></li>
+									<li><a href="final.html">Final Delivery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Design</a>
+								<ul>
+									<li><a href="development.html">Initial Experiments</a></li>
+									<li><a href="diagrams.html">Architectural Diagrams</a></li>
+									<li><a href="designPatterns.html">Design Patterns</a></li>
+									<li>
+										<a href="iterationMain.html">Iterations</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Testing</a>
+								<ul>
+									<li><a href="testing.html">Testing</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Evaluation</a>
+								<ul>
+									<li><a href="evaluation.html">Summary</a></li>
+									<li><a href="furtherDev.html">Critical Evaulation</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Project Management</a>
+								<ul>
+									<li><a href="management.html">Project Management</a></li>
+									<li><a href="tools.html">Tools</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="client.html">Client Meetings & <br> Final Feedback</a></li>
+
+									<li>
+										<a href="#" >Manuals</a>
+										<ul>
+											<li><a href="SystemManual.pdf">System Manual</a></li>
+											<li><a href="UserManual.pdf">User Manual</a></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+	  			</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Critical Evaluation</h2>
+						<p>Below is a critical evaluation of our project including sections such as its architecture, user interface and future work. </p>
+					</header>
+					<div class="box">
+						<h2> Architecture Design </h2>
+
+            <p>We used a Model, View, Controller design pattern for our application and it made up the main architecture of our web app. The fact that we used this pattern meant that we could neatly organise our code into its individual sections and allowed for good coding practice from the offset. It also means that should our clients developers need to edit or check our code then it should be clear to them how everything comes together.</p>
+            <p>We also carefully designed our database system, making sure we used correct relationships between all of our tables. We did this by deciding the “hierarchy” of our tables and working our way down to the least important one. For example within our application, “Systems” was the top table, followed by “Versions” which had a foreign key “SystemID” from the Systems table. We then worked our way down into “DataPoints” and “Mappings” which were all connected with foreign key. This process meant that we could avoid data duplication and data inconsistencies within our database which is something we aimed to avoid from the start. For example rather than storing a new entry of “System Name” within each Version table, we can find the system name from the System table using the “SystemID” foreign key. This means that should the System Name be changed then that will automatically filter through all of our tables rather than having inconsistencies throughout.</p>
+						<p>Also when a system is deleted all its associated versions, data points and mappings will be destroyed automatically. When a version is deleted all its associated data points and mappings will be deleted as well. Finally when a data point is deleted all its associated mappings will also be deleted. </p>
+					</div>
+						<div class="box">
+
+					  <h2>User interface design and user experience </h2>
+            <p>An easy to use and clear user interface was one of the most important factors we took into account when developing our application. We wanted to make sure that our application was as intuitive as possible and so we made sure this was achieved in a number of different ways. We used icons such as a bin and a pencil for options such as deleting and editing as we see these as universal icons which most people will immediately understand  and so makes the user experience more familiar and simple. We also made sure to add hover over text for each of these options which would explain in more detail the function of these buttons. This was an accessibility feature that we added to make sure that our application could be used by a wide range of people. </p>
+            <p>We also added a “Key Features” section to our home page with the intention to be a clear summary of everything Maple can do. We added shortcut buttons in order to go to each of these sections in an attempt to add flow to the user experience. </p>
+						<p>In addition we implemented flash message to provide users with instant response to create, update or delete actions for systems, versions , data points and mappings when available. The messages will help inform the user whether their actions were successfully implemented. When errors occur, the user will be provided with the reasons for the error.</p>
+						<p>We also implemented scrolls for tables with a large number of columns or data entries to help the user analyse the data in a more user friendly manner.</p>
+						<p>In summary we feel that Maple offers a good user experience, being very self explanatory with a good flow between pages. </p>
+					</div>
+					<div class="box">
+
+						<h2> Stability: Error checking and Validation</h2>
+						<p>We implemented error checking on all user input within our application. Validation were implemented on the system, version, data point and mapping models to provide stability to the application. Error checking was implemented for for create and edit actions. Below our the error checks that we implemented. When an error occurs, a red flash message first displays and the user will then be provided with the list of errors in red colour text.</p>
+						<p><b>Systems: <br></b>When creating or editing a system, system name has to be unique and can’t be blank.</p>
+						<p><b>Versions: </b><br>When creating or editing a version, the version name has to be unique and can’t be blank.</p>
+						<p><b>Data Points: </b><br>When creating or editing a data points, a unique logical name which isn’t blank has to be provided.<br>Only integers are allowed for display height and display width if values are provided.</p>
+						<p><b>Mappings: </b><br>No mappings between the same versions are allowed.<br>2 data points from either side must be selected.<br>Mappings are not allowed to be repeated.</p>
+					</div>
+					<div class="box">
+
+						<h2> Evaulation of Testing </h2>
+						<p>The successful integration tests completed on the controllers gave us confidence that all the required methods of the controller worked successfully.</p>
+						<p>The unit tests (minitests) in rails helped us to identify the required validation and error checking for user input. For example the test helped us identify how we needed to implement a validation to ensure that mapping duplication is avoided.</p>
+						<p>The user acceptance testing gave us a good idea of what the user experience of Maple is and how easy or difficult it is to complete certain tasks. </p>
+					</div>
+					<div class="box">
+						<h2>Challenges</h2>
+						<h3>Mapping screen</h3>
+						<h4> How to select data points for mapping? </h4>
+						<p>Initially users were able to to input their choice for data points using two text field forms where the data points ids to map from and map to were inputted respectively. This was not very efficient nor user friendly. Hence we implemented radio buttons where the user can select the data points to map between the two versions (each with their own table of data points).</p>
+						<h4>How to save data points for mapping?</h4>
+						<p>We need to find an efficient way to store mappings in our database so that we can display the attributes of the data points selected when displaying all the created mappings. Our solutions was to create a new mappings database for our application. We created two columns where we stored the selected data point ids as foreign key id references. We can then use the foreign keys to display the attributes of the data points.</p>
+						<h4>How to display filtered list of mappings for chosen versions?</h4>
+						<p>We achieved this by adding two new columns to the mapping database. These would store the version ids of the 2 selected data points.</p>
+
+						<h3>Routing </h3>
+						<h4>Used nested resources</h4>
+						<p>The data models for our application were nested more than 1 level deep. The ‘ruby on rails guide’ recommended that the controllers for these respective databases can’t be nested more than 1 level deep. This is because as the size of the nesting increases, the required commands for the respective controller quickly become complicated. </p>
+						<p>The solution to overcome the issues of deep nesting was to use shallow nesting. This involved using the “:shallow” option when stating the relationship between the controllers in the routing file for the rails application. The actions are collectively scoped under the parent to avoid deep nesting. This becomes more like a hierarchy. In order to construct the routes, the minimal amount of information is required to uniquely identify the resource. “The shallow method of the DSL creates a scope inside of which every nesting is shallow.”</p>
+
+						<h3>Big tables with large number of columns </h3>
+						<p>Such as in the case of data points and mappings meant that the tables were extending outsides the div class. This reduced user friendliness. In order to overcome this, we implemented independent scrolls for these tables. We even implemented scrolls with the header of the table fixed to help the user identify which column specific cells are in. </p>
+						<h3>Being able to all data point values at the same time without having to fill in a form again</h3>
+						<p>We made editing data points more efficient by implementing the rails gem: ‘Best in Place’. This meant attributes can be edited within the cells of the table and the value displayed will change and it will be updated in the database automatically.</p>
+					</div>
+					<div class="box">
+
+						<h2>  Incomplete Features and Bugs</h2>
+						<p>Be able to display the user input for all fields of a form when an error occurs whilst creating a version, data point or mapping.</p>
+						<p>Display success flash message when successfully editing a data point. </p>
+					</div>
+					<div class="box">
+						<h2>Project Management</h2>
+						<p> During the project we made sure to try and manage the splitting of tasks as efficiently as possible. The <b>Management</b> section within this website shows how we used <a href="management.html"> Gaant Charts,</a> and tools such as <a href="tools.html#slack"> Slack,</a> <a href="tools.html#trello">Trello</a> and <a href="tools.html#gdrive">Google Drive</a> to manage development and teamwork in a reliable way. Tools such as Slack meant that we could always be in contact with the team and allowed us to use integrations such as the GitHub integration to make sure we were always up to date with development commits made by other members of the team.
+						<p>Wherever possible, we made sure to delegate tasks according to the skills of the team members and it made sure that tasks could be completed to the best of their ability. It also meant that tasks could be completed quicker than it would should another team member have to learn the skills from scratch. </p>
+						<p> During development, we did try and evenly distribute the workload between all three members,  however Matt and Pius were responsible for the implementation of the application. We tried to make sure that all team members contributed to other aspects of the project - a list of work packages and contributors can be seen <a href="evaluation.html#packages"> here. </a> </p>
+					</div>
+						<div class="box">
+
+						<h2>Future Work</h2>
+						<p> If we had another six months to work on the project, there are a number of features we could and would like to add in order to make Maple an even better application. Currently, when a user wants to add a set of data points to a specific version, they must be input either manually or through a set of MySQL insert statements in the backend of the application. Now whilst using MySQL to parse a set of CSV files or equivalent is obviously more efficient than one by one input, having to do this through the backend is not ideal. Therefore, a major future feature we would like to implement would be a loader which would allow a user to simple upload a set of data points into a version by uploading a CSV or SQL file through the front end of Maple. </p>
+						<p>Other features we would like to add would be a search bar for the  Data Points Display where a user could search for a particular data point or could use an advanced search and search for a number of search queries. This was a feature we intended to add, however due to time constraints we were not able to and so would definitely add it if we had another six months.  </p>
+						<p>Finally, another future addition that has come from our client would be the ability to filter the display of mappings on the “Create Mappings” page. Currently when two systems and versions are chosen, all of the mappings between those chosen versions are shown along with a display of all data points for those versions at the bottom of the page. Now a good improvement here would be to merge these two items into one with a “filter” option. Here, we could have a table which could for example display all data points, or only the mapped ones as per the filter choice. We could also filter it by different attributes, for example “Logical Name” or “Data Type”. </p>
+						<p>The above examples are some ways we would improve Maple should we have another six months to work on it. We feel that we completed all of our initial requirements to a good standard, as well as adding additional ones along the way. The above examples would all but improve our application further and create a more enhanced user experience. </p>
+
+          </div>
+
+
+
+
+
+
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Team 33. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

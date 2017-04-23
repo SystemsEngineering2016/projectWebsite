@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Requirements</a>
+								<ul>
+									<li><a href="background.html">Background</a></li>
+									<li><a href="requirements.html">Our Requirements</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Research</a>
+								<ul>
+									<li><a href="research.html">Background Research</a></li>
+									<li><a href="researchProject.html">Project Specific Research</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">HCI</a>
+								<ul>
+									<li><a href="prototypes.html">Paper Prototypes</a></li>
+									<li><a href="ui.html">Functional Prototype</a></li>
+									<li><a href="final.html">Final Delivery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Design</a>
+								<ul>
+									<li><a href="development.html">Initial Experiments</a></li>
+									<li><a href="diagrams.html">Architectural Diagrams</a></li>
+									<li><a href="designPatterns.html">Design Patterns</a></li>
+									<li>
+										<a href="iterationMain.html">Iterations</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Testing</a>
+								<ul>
+									<li><a href="testing.html">Testing</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Evaluation</a>
+								<ul>
+									<li><a href="evaluation.html">Summary</a></li>
+									<li><a href="furtherDev.html">Critical Evaulation</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Project Management</a>
+								<ul>
+									<li><a href="management.html">Project Management</a></li>
+									<li><a href="tools.html">Tools</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="client.html">Client Meetings & <br> Final Feedback</a></li>
+
+									<li>
+										<a href="#" >Manuals</a>
+										<ul>
+											<li><a href="SystemManual.pdf">System Manual</a></li>
+											<li><a href="UserManual.pdf">User Manual</a></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+	  			</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Initial Experiments</h2>
+						<p> In order to start any sort of development, we had to experiment with the tools we would be using. </p>
+					</header>
+					<div class="box">
+						<h3> Experiments </h3>
+				<p> First we were required to install the OpenEyes virtual machine on our personal computers. This caused problems initially as we did not have experience in using virtual machines and Vagrant. Therefore, we had to meet our clients technical team who aided us in setting up on our local machines. </p>
+				<p> Once working, we could access the OpenEyes Virtual Machine using Chrome (pictured below) and we could also access the server in Terminal. Within the VM we could see the front-end being able to perform tasks that doctors would. In the termial we could view the backend of the system, being given access to things such as the PHP and HTML files and being able to see the architecture of the whole system. </p>
+				<p> Some of the results from experimenting with the system can be seen below: </p>
+				<p align = "center"><img src="images/terminal2.png"> </p>
+				<p align = "center">Steps needed to launch the VM </p>
+				<p align = "center"><img src="images/terminal1.png"></p>
+				<p align = "center">The server containing the VM</p>
+
+				<p align = "center"><img src="images/openeyes1.png"></p>
+				<p align = "center">The homepage of the main OpenEyes site</p>
+
+				<p align = "center"><img src="images/openeyes2.png"></p>
+				<p align = "center">Search results when "Smith" is searched in search field </p>
+
+				<hr/>
+				<h3> Experiment Log </h3>
+
+				<p> Above, you have seen a specific example of how we undertook some experimentation during the development process of our project. Below, you can see all of the experiments we have undertook or will need to undertake over the next term.</p>
+				<p> The aim of the experiments was to help us identify the methods of satisfying the requirements and test frameworks and tools. We were able to identify solutions to problems that  developed following requirements gathering. The experiments were very important for the design process and it prepares us well for the implementation and development stage. The most up to date experiment log for the experiments is shown below: </p>
+
+				<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Exp. no</th>
+						<th>Title</th>
+						<th>Experiment Details</th>
+						<th>Experiment Results </th>
+						<th>Success and Failure</th>
+						<th>Done By </th>
+						<th>Done </th>
+
+
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td>1</td>
+						<td>Uploading</td>
+						<td>The aim was to investigate how to differentiate between uploading a new system and adding a new version of an existing system?</td>
+						<td>We identified that once the users selects to “load”, we needed two separate pathways for the respective circumstances. If the user intends to upload a new system, then they should be able to select the file to upload and the name for it. In order to upload a new version, the user will have to first select a system and then choose the new file and classify the version.</td>
+						<td>We succeeded in outlining the separate pathways. </td>
+						<td>Pius and Pierce</td>
+						<td>1/12/16</td>
+
+
+					</tr>
+
+					<tr>
+						<td>2</td>
+						<td>Maintaining</td>
+						<td>We wanted to identify what pathway should be followed by the user for maintenance of a version</td>
+						<td>We identified that the user must select the system and then its version to modify. Then they should be able to select which method to use to maintain a version. They should be able to either modify the version directly, or duplicate and modify or export the version as an SQL file. The first two options involved making changes within the app. They should be able to add and remove information from the tables.</td>
+						<td>This experiment clearly identified the pathway to following for maintaining a version. However this experiment didn’t tackle the maintenance of very big file versions.</td>
+						<td>Pius and Pierce</td>
+						<td>2/12/16</td>
+					</tr>
+
+					<tr>
+						<td>3</td>
+						<td>Format of data dictionary tables</td>
+						<td>We wanted to identify the format to use for displaying the data dictionary tables</td>
+						<td>This experiment helped us identify the format and attributes to use for displaying the data dictionary tables. This was achieved by conducting online research and analysing the table format used in OpenEHR by our client OpenEyes.</td>
+						<td>This experiment highlighted the table formats to use. We need to ensure the layout can be tailored according to the system.</td>
+						<td>Pius</td>
+						<td>8/12/16</td>
+					</tr>
+
+					<tr>
+						<td>4</td>
+						<td>Mapping</td>
+						<td>We wanted to investigate how we can allow users to map between data dictionaries, versions and systems.</td>
+						<td>The experiment results provided us with a clear pathway to make mapping easier. The user should first be able to select two systems and the version for the respective systems. The screen should then split into two and display the data dictionary for the independent versions in table view or mapping view. Table view should show the mapped section but not show or allow linking. Mapping view should show and allow mappings and links between the data dictionaries.</td>
+						<td>This experiment helped us identify how using table view and mapping view can help meet the mapping requirements. However we need to ensure that we can overcome problems of high information density. </td>
+						<td>Pius and Pierce</td>
+						<td>9/12/16</td>
+					</tr>
+
+					<tr>
+						<td>5</td>
+						<td>Frameworks and Tools</td>
+						<td>We wanted to see what tools and frameworks would allow us to successfully develop the application.</td>
+						<td>These experiments are giving us a closer look at what would best serve us going forward. It showed that whilst PHP was flawed, its familiarity still put it on level footing with the cleaner Ruby on Rails and Grails languages. All of the tools with which we could develop the application were fairly similar, which meant none had an advantage or disadvantage over the others.</td>
+						<td>This experiment is still ongoing and has not identified a clear frontrunner. However, it’s still providing useful information for the work ahead.</td>
+						<td>Pierce</td>
+						<td>10/12/16</td>
+					</tr>
+
+					<tr>
+						<td>6</td>
+						<td>OpenEyes Server</td>
+						<td>The aim was to look at the OpenEyes server in order to get an idea of the architecture</td>
+						<td>With this experiment we managed to conclude that the OpenEyes virtual machine is written using PHP. We also viewed the overall architecture of the system and were able to start to see how the databases were connected  </td>
+						<td>The experiemt was a success as we got an overview of how the system works. However, more research into the specific database system is required. </td>
+						<td>Matt</td>
+						<td>10/12/16</td>
+					</tr>
+
+
+
+
+
+				</tbody>
+			</table>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Team 33. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

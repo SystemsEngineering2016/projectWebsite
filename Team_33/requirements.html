@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Requirements</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Requirements</a>
+								<ul>
+									<li><a href="background.html">Background</a></li>
+									<li><a href="requirements.html">Our Requirements</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Research</a>
+								<ul>
+									<li><a href="research.html">Background Research</a></li>
+									<li><a href="researchProject.html">Project Specific Research</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">HCI</a>
+								<ul>
+									<li><a href="prototypes.html">Paper Prototypes</a></li>
+									<li><a href="ui.html">Functional Prototype</a></li>
+									<li><a href="final.html">Final Delivery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Design</a>
+								<ul>
+									<li><a href="development.html">Initial Experiments</a></li>
+									<li><a href="diagrams.html">Architectural Diagrams</a></li>
+									<li><a href="designPatterns.html">Design Patterns</a></li>
+									<li>
+										<a href="iterationMain.html">Iterations</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Testing</a>
+								<ul>
+									<li><a href="testing.html">Testing</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Evaluation</a>
+								<ul>
+									<li><a href="evaluation.html">Summary</a></li>
+									<li><a href="furtherDev.html">Critical Evaulation</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Project Management</a>
+								<ul>
+									<li><a href="management.html">Project Management</a></li>
+									<li><a href="tools.html">Tools</a></li>
+									<li><a href="progress.html">Bi-Weekly Reports</a></li>
+									<li><a href="client.html">Client Meetings & <br> Final Feedback</a></li>
+
+									<li>
+										<a href="#" >Manuals</a>
+										<ul>
+											<li><a href="SystemManual.pdf">System Manual</a></li>
+											<li><a href="UserManual.pdf">User Manual</a></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							<li><a href="https://github.com/SystemsEngineering2016"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+	  			</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Project Requirements</h2>
+						<p> We gathered the requirements using an iterative approach. We began creating requirements using the minutes collected from our very first meeting. However, these requirements were for multiple projects and our mentors believed that this was not feasible. Hence in the following meeting with our client, we chose one project and was provided with an initial set of requirements by our client. Unfortunately these requirements were difficult to process. This prompted us to develop our own version of the requirements. Then following discussions with our client, we made modifications to the requirements and finalised the MoSCoW rating to develop the following list:   <br>
+					</header>
+					<div class="box">
+			        <h3> Functional Requirements (Updated)</h3>
+			        <table class="table table-hover">
+			        <thead>
+			          <tr>
+			            <th>ID</th>
+			            <th>Requirements</th>
+			            <th>MoSCoW rating</th>
+
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <td>RQ1</td>
+			            <td>The application must be a data dictionary editor</td>
+			            <td>Must Have</td>
+			          </tr>
+
+			          <tr>
+			            <td>RQ2</td>
+			            <td>The application must be able to create a data dictionary (logical and physical) for the required system e.g. for a customer system or for a payroll system</td>
+			            <td>Must Have</td>
+			          </tr>
+
+			          <tr>
+			            <td>RQ3</td>
+			            <td>The application should be able to load the data dictionary for OpenEyes into the application</td>
+			            <td>Could Have</td>
+			          </tr>
+			          <tr>
+			            <td>RQ4</td>
+			            <td>The application should ensure that the data dictionaries can handle the versioning of systems</td>
+			            <td>Should Have</td>
+			          </tr>
+			          <tr>
+			            <td>RQ5</td>
+			            <td>The application should ensure that the data dictionary items can be mapped to other items of another system or version</td>
+			            <td>Should Have</td>
+			          </tr>
+
+			          <tr>
+			            <td><strike>RQ6</strike></td>
+			            <td><strike>The application should allow the extraction of data dictionary data</strike> <font color=red >The client decided that they no longer required this feature </font></td>
+			            <td><strike>Should Have</strike></td>
+			          </tr>
+			          <tr>
+			            <td>RQ7</td>
+			            <td>The application should be able to compare data models</td>
+			            <td>Should Have</td>
+			          </tr>
+			          <tr>
+			            <td><strike>RQ8</strike></td>
+			            <td><strike>The application could be able to load XML schema data</strike> <font color=red >The client opted to stick with manual input and focus on the main functionality of the application </font></td>
+			            <td><strike>Could Have</strike></td>
+			          </tr>
+			          <tr>
+			            <td>RQ9</td>
+			            <td>The application should allow a data dictionary to be mapped to other data dictionaries</td>
+			            <td>Should Have</td>
+			          </tr>
+			          <tr>
+			            <td>RQ10</td>
+			            <td>The application must have a screen for loading data dictionaries</td>
+			            <td>Must Have</td>
+			          </tr>
+			          <tr>
+			            <td>RQ11</td>
+			            <td>The application must have a screen that enables the maintenance of a single data dictionary (adding and removal of columns)</td>
+			            <td>Must Have</td>
+			          </tr>
+			          <tr>
+			            <td>RQ12</td>
+			            <td>The application must have a screen for loading data</td>
+			            <td>Must Have</td>
+			          </tr>
+			          <tr>
+			            <td>RQ13</td>
+			            <td>The application must have a screen that gives access to the default mapping tool</td>
+			            <td>Must Have</td>
+			          </tr>
+			        </tbody>
+			      </table>
+			      <br>
+			      <h3> Non-Functional Requirements </h3>
+			      <table class="table table-hover">
+			      <thead>
+			        <tr>
+			          <th>ID</th>
+			          <th>Requirements</th>
+			          <th>MoSCoW rating</th>
+
+			        </tr>
+			      </thead>
+			      <tbody>
+
+			        <tr>
+			          <td>RQ14</td>
+			          <td>The application must accept systems and data dictionaries as its data (content for the application)</td>
+			          <td>Must Have</td>
+			        </tr>
+
+			        <tr>
+			          <td>RQ15</td>
+			          <td>The application must define a data model for our data dictionary</td>
+			          <td>Must Have</td>
+			        </tr>
+
+
+			        <tr>
+			          <td>RQ16</td>
+			          <td>The data dictionary should have have the ability to be augmented (can grow in size)</td>
+			          <td>Should Have</td>
+			        </tr>
+
+
+
+			      </tbody>
+			    </table>
+
+					</div>
+					<section class="box special">
+						<h3>Use-Cases</h3>
+						<p> After developing the requirements, we implemented use case analysis in order to help us understand the system we are designing. The use cases enabled us to generate initial ideas as to how particular functionalites can be achieved. We explored the interaction between the system and the users of the application. </p>
+						<p align = "center"><img src="images/UseCases/usecase1.png" alt="" /></p>
+						<p align = "center"><img src="images/UseCases/usecase2.png" alt="" /></p>
+						<p align = "center"><img src="images/UseCases/usecase3.png" alt="" /></p>
+						<p align = "center"><img src="images/UseCases/usecase4.png" alt="" /></p>
+
+
+
+					</section>
+
+					<section class="box special">
+						<h3>Personas</h3>
+						<p> Typical users for our application would be tecnhical teams within the healthcare industry. Examples of this are: </p>
+
+						<p> "Jason needs to compare the column names for "Data of Birth" in the latest OpenEyes data dictionary and the latest data dictionary for the Royal College of Ophthalmologists' NOD. He can do this by creating a mapping between the two data points using the mapping tool within Maple which will show a clear relationship between Date of Birth from both systems. He can then compare what he needs." </p>
+
+						<p> "Pete has just noticed that there is an additional data point within the OpenEyes data dictonary he is using which isn't within the data points display in Maple. He can add this by adding a single data point on the data points display page for the version of OpenEyes he is working on." </p>
+
+						<p> "The team working on the OpenEyes system have moved on to a new version. They can mark this within Maple by marking the old version as inactive and creating a new, active version with the data points that they need." </p>
+
+
+
+
+					</section>
+
+				</section>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Team 33. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
