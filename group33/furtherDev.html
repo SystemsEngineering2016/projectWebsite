@@ -101,12 +101,17 @@
             <p>We used a Model, View, Controller design pattern for our application and it made up the main architecture of our web app. The fact that we used this pattern meant that we could neatly organise our code into its individual sections and allowed for good coding practice from the offset. It also means that should our clients developers need to edit or check our code then it should be clear to them how everything comes together.</p>
             <p>We also carefully designed our database system, making sure we used correct relationships between all of our tables. We did this by deciding the “hierarchy” of our tables and working our way down to the least important one. For example within our application, “Systems” was the top table, followed by “Versions” which had a foreign key “SystemID” from the Systems table. We then worked our way down into “DataPoints” and “Mappings” which were all connected with foreign key. This process meant that we could avoid data duplication and data inconsistencies within our database which is something we aimed to avoid from the start. For example rather than storing a new entry of “System Name” within each Version table, we can find the system name from the System table using the “SystemID” foreign key. This means that should the System Name be changed then that will automatically filter through all of our tables rather than having inconsistencies throughout.</p>
 						<p>Also when a system is deleted all its associated versions, data points and mappings will be destroyed automatically. When a version is deleted all its associated data points and mappings will be deleted as well. Finally when a data point is deleted all its associated mappings will also be deleted. </p>
-            <h2>User interface design and user experience </h2>
+					</div>
+						<div class="box">
+
+					  <h2>User interface design and user experience </h2>
             <p>An easy to use and clear user interface was one of the most important factors we took into account when developing our application. We wanted to make sure that our application was as intuitive as possible and so we made sure this was achieved in a number of different ways. We used icons such as a bin and a pencil for options such as deleting and editing as we see these as universal icons which most people will immediately understand  and so makes the user experience more familiar and simple. We also made sure to add hover over text for each of these options which would explain in more detail the function of these buttons. This was an accessibility feature that we added to make sure that our application could be used by a wide range of people. </p>
             <p>We also added a “Key Features” section to our home page with the intention to be a clear summary of everything Maple can do. We added shortcut buttons in order to go to each of these sections in an attempt to add flow to the user experience. </p>
 						<p>In addition we implemented flash message to provide users with instant response to create, update or delete actions for systems, versions , data points and mappings when available. The messages will help inform the user whether their actions were successfully implemented. When errors occur, the user will be provided with the reasons for the error.</p>
 						<p>We also implemented scrolls for tables with a large number of columns or data entries to help the user analyse the data in a more user friendly manner.</p>
 						<p>In summary we feel that Maple offers a good user experience, being very self explanatory with a good flow between pages. </p>
+					</div>
+					<div class="box">
 
 						<h2> Stability: Error checking and Validation</h2>
 						<p>We implemented error checking on all user input within our application. Validation were implemented on the system, version, data point and mapping models to provide stability to the application. Error checking was implemented for for create and edit actions. Below our the error checks that we implemented. When an error occurs, a red flash message first displays and the user will then be provided with the list of errors in red colour text.</p>
@@ -114,12 +119,15 @@
 						<p><b>Versions: </b><br>When creating or editing a version, the version name has to be unique and can’t be blank.</p>
 						<p><b>Data Points: </b><br>When creating or editing a data points, a unique logical name which isn’t blank has to be provided.<br>Only integers are allowed for display height and display width if values are provided.</p>
 						<p><b>Mappings: </b><br>No mappings between the same versions are allowed.<br>2 data points from either side must be selected.<br>Mappings are not allowed to be repeated.</p>
+					</div>
+					<div class="box">
 
 						<h2> Evaulation of Testing </h2>
 						<p>The successful integration tests completed on the controllers gave us confidence that all the required methods of the controller worked successfully.</p>
 						<p>The unit tests (minitests) in rails helped us to identify the required validation and error checking for user input. For example the test helped us identify how we needed to implement a validation to ensure that mapping duplication is avoided.</p>
 						<p>The user acceptance testing gave us a good idea of what the user experience of Maple is and how easy or difficult it is to complete certain tasks. </p>
-
+					</div>
+					<div class="box">
 						<h2>Challenges</h2>
 						<h3>Mapping screen</h3>
 						<h4> How to select data points for mapping? </h4>
@@ -138,16 +146,21 @@
 						<p>Such as in the case of data points and mappings meant that the tables were extending outsides the div class. This reduced user friendliness. In order to overcome this, we implemented independent scrolls for these tables. We even implemented scrolls with the header of the table fixed to help the user identify which column specific cells are in. </p>
 						<h3>Being able to all data point values at the same time without having to fill in a form again</h3>
 						<p>We made editing data points more efficient by implementing the rails gem: ‘Best in Place’. This meant attributes can be edited within the cells of the table and the value displayed will change and it will be updated in the database automatically.</p>
+					</div>
+					<div class="box">
 
 						<h2>  Incomplete Features and Bugs</h2>
 						<p>Be able to display the user input for all fields of a form when an error occurs whilst creating a version, data point or mapping.</p>
 						<p>Display success flash message when successfully editing a data point. </p>
-
-
+					</div>
+					<div class="box">
 						<h2>Project Management</h2>
 						<p> During the project we made sure to try and manage the splitting of tasks as efficiently as possible. The <b>Management</b> section within this website shows how we used <a href="management.html"> Gaant Charts,</a> and tools such as <a href="tools.html#slack"> Slack,</a> <a href="tools.html#trello">Trello</a> and <a href="tools.html#gdrive">Google Drive</a> to manage development and teamwork in a reliable way. Tools such as Slack meant that we could always be in contact with the team and allowed us to use integrations such as the GitHub integration to make sure we were always up to date with development commits made by other members of the team.
 						<p>Wherever possible, we made sure to delegate tasks according to the skills of the team members and it made sure that tasks could be completed to the best of their ability. It also meant that tasks could be completed quicker than it would should another team member have to learn the skills from scratch. </p>
 						<p> During development, we did try and evenly distribute the workload between all three members,  however Matt and Pius were responsible for the implementation of the application. We tried to make sure that all team members contributed to other aspects of the project - a list of work packages and contributors can be seen <a href="evaluation.html#packages"> here. </a> </p>
+					</div>
+						<div class="box">
+
 						<h2>Future Work</h2>
 						<p> If we had another six months to work on the project, there are a number of features we could and would like to add in order to make Maple an even better application. Currently, when a user wants to add a set of data points to a specific version, they must be input either manually or through a set of MySQL insert statements in the backend of the application. Now whilst using MySQL to parse a set of CSV files or equivalent is obviously more efficient than one by one input, having to do this through the backend is not ideal. Therefore, a major future feature we would like to implement would be a loader which would allow a user to simple upload a set of data points into a version by uploading a CSV or SQL file through the front end of Maple. </p>
 						<p>Other features we would like to add would be a search bar for the  Data Points Display where a user could search for a particular data point or could use an advanced search and search for a number of search queries. This was a feature we intended to add, however due to time constraints we were not able to and so would definitely add it if we had another six months.  </p>
@@ -168,7 +181,7 @@
 				<footer id="footer">
 
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Team 33. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
